@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="iris-analytics-sample.ZPM">
+    <Module>
+      <Name>iris-analytics-sample</Name>
+      <Version>1.1.7</Version>
+      <Dependencies>
+        <ModuleReference>
+          <Name>dsw</Name>
+          <Version>3.*</Version>
+        </ModuleReference>
+      </Dependencies>
+      <Packaging>module</Packaging>
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="dc.irisbi.PKG"/>
+      <Resource Name="dc.irisbi.covid19D.GBL" />
+      <!-- <Resource Name="*.DFI" /> -->
+      <Resource Directory="dfi" FilenameExtension="dfi" Name="Covid19-Countries.dashboard.DFI" />
+      <Resource Directory="dfi" Name="Covid19-Died.pivot.DFI" />
+      <Resource Directory="dfi" Name="Covid19-ConfirmedByProvince80.pivot.DFI" />
+      <Resource Directory="dfi" Name="Covid19-Confirmed.pivot.DFI" />
+      <Resource Directory="dfi" Name="Covid19-ConfirmedByCountries.pivot.DFI" />
+      <Resource Directory="dfi" Name="Covid19-ConfirmedByProvince.pivot.DFI" />
+      <UnitTest Name="/tests" Package="dc.irisbi.unittests" Phase="test"/>
+      <Invokes>
+        <Invoke Class="%DeepSee.Utils" Method="%BuildCube">
+          <Arg>CovidCube</Arg>
+        </Invoke>
+        <Invoke Class="dc.irisbi.covid19cube" Method="EnableIRISBI">
+        </Invoke>
+        <Invoke Class="dc.irisbi.covid19cube" Method="StopJournalling">
+          <Arg>USER</Arg>
+        </Invoke>
+      </Invokes>
+      <Parameter Name="folder" Value="user" />
+      <FileCopy Name="dsw/user.json" Target="${cspdir}dsw/configs/${folder}.json"/>
+    </Module>
+  </Document>
+</Export>
