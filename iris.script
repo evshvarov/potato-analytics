@@ -7,21 +7,24 @@
     do EnableDeepSee^%SYS.cspServer("/csp/user/")
 
     zpm "install isc-dev"
-    do ##class(dev.code).workdir("/home/irisowner/irisdev/src")
+    do ##class(dev.code).workdir("/home/irisowner/dev/src")
 
 
-    ;zpm "install csvgen"
-    ;set file="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/08-15-2022.csv"
-    ;zw ##class(community.csvgen).GenerateFromURL(file,",","dc.irisbi.covid19")
+    zpm "install csvgen"
+    set file="/home/irisowner/dev/data/countries.csv"
+    zw ##class(community.csvgen).Generate(file,",","esh.csvpkey.Countries",,,,,,,,"Name")
+    set file="/home/irisowner/dev/data/potato_sales.csv"
+    zw ##class(community.csvgen).Generate(file,",","esh.csvpkey.Potatos",,,,,1)
+    
     ;zw ##class(%DeepSee.WizardUtils).%GenerateCubeDefinition("dc.irisbi.covid19","CovidCube","dc.irisbi.covid19cube",1)
     ;zw $System.OBJ.Compile("dc.irisbi.covid19cube")
     ;zw ##class(%DeepSee.Utils).%BuildCube("dc.irisbi.covid19cube")
+    zpm "install dsw"
 
+    zpm "load /home/irisowner/dev/ -v"
 
-    zpm "load /home/irisowner/irisdev/ -v"
-
-    zpm "install git-source-control"
-    do ##class(%Studio.SourceControl.Interface).SourceControlClassSet("SourceControl.Git.Extension")
+    //zpm "install git-source-control"
+    //do ##class(%Studio.SourceControl.Interface).SourceControlClassSet("SourceControl.Git.Extension")
 
 
     zn "%SYS"
