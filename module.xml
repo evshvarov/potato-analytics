@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="csv-potato-analytics.ZPM">
+  <Document name="esh-potato-analytics.ZPM">
     <Module>
-      <Name>csv-potato-analytics</Name>
+      <Name>esh-potato-analytics</Name>
       <Version>1.0.0</Version>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>

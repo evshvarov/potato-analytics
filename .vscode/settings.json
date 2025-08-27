@@ -18,7 +18,7 @@
         "Analyzer": "http://localhost:${port}/csp/user/_DeepSee.UserPortal.Analyzer.zen",
         "Architect": "http://localhost:${port}/csp/user/_DeepSee.UI.Architect.zen?$NAMESPACE=USER"
       },
-      "active": true
+      "active": false
     }
 
 }

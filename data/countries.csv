@@ -49,14 +49,14 @@ Cocos (Keeling) Islands,CC,West Island,-12.1642,96.8296
 Colombia,CO,Bogotá,4.711,-74.0721
 Comoros,KM,Moroni,-11.7022,43.2551
 Congo,CG,Brazzaville,-4.2634,15.2429
-"Congo, the Democratic Republic of the",CD,Kinshasa,-4.4419,15.2663
+DR Congo,CD,Kinshasa,-4.4419,15.2663
 Cook Islands,CK,Avarua,-21.212,-159.7762
 Costa Rica,CR,San José,9.9281,-84.0907
 Croatia,HR,Zagreb,45.815,15.9819
 Cuba,CU,Havana,23.1136,-82.3666
 Curaçao,CW,Willemstad,12.1696,-68.99
 Cyprus,CY,Nicosia,35.1856,33.3823
-Czech Republic,CZ,Prague,50.0755,14.4378
+Czechia,CZ,Prague,50.0755,14.4378
 Côte d'Ivoire,CI,Yamoussoukro,6.8276,-5.2893
 Denmark,DK,Copenhagen,55.6761,12.5683
 Djibouti,DJ,Djibouti,11.8251,42.5903
@@ -103,7 +103,7 @@ Hungary,HU,Budapest,47.4979,19.0402
 Iceland,IS,Reykjavík,64.1466,-21.9426
 India,IN,New Delhi,28.6139,77.209
 Indonesia,ID,Jakarta,-6.2088,106.8456
-"Iran, Islamic Republic of",IR,Tehran,35.6892,51.389
+Iran,IR,Tehran,35.6892,51.389
 Iraq,IQ,Baghdad,33.3152,44.3661
 Ireland,IE,Dublin,53.3498,-6.2603
 Isle of Man,IM,Douglas,54.1509,-4.4821
@@ -117,7 +117,7 @@ Kazakhstan,KZ,Nur-Sultan,51.1694,71.4491
 Kenya,KE,Nairobi,-1.2921,36.8219
 Kiribati,KI,Tarawa,1.3382,173.0176
 "Korea, Democratic People's Republic of",KP,Pyongyang,39.0392,125.7625
-"Korea, Republic of",KR,Seoul,37.5665,126.978
+South Korea,KR,Seoul,37.5665,126.978
 Kuwait,KW,Kuwait City,29.3759,47.9774
 Kyrgyzstan,KG,Bishkek,42.8746,74.5698
 Lao People's Democratic Republic,LA,Vientiane,17.9757,102.6331
@@ -144,7 +144,7 @@ Mauritius,MU,Port Louis,-20.1654,57.5015
 Mayotte,YT,Mamoudzou,-12.7806,45.2278
 Mexico,MX,Mexico City,19.4326,-99.1332
 "Micronesia, Federated States of",FM,Palikir,6.9248,158.1611
-"Moldova, Republic of",MD,Chișinău,47.0105,28.8638
+Moldova,MD,Chișinău,47.0105,28.8638
 Monaco,MC,Monaco,43.7384,7.4246
 Mongolia,MN,Ulaanbaatar,47.8864,106.9057
 Montenegro,ME,Podgorica,42.4304,19.2594
@@ -180,7 +180,7 @@ Portugal,PT,Lisbon,38.7223,-9.1393
 Puerto Rico,PR,San Juan,18.4655,-66.1057
 Qatar,QA,Doha,25.2854,51.531
 Romania,RO,Bucharest,44.4268,26.1025
-Russian Federation,RU,Moscow,55.7558,37.6176
+Russia,RU,Moscow,55.7558,37.6176
 Rwanda,RW,Kigali,-1.9706,30.1044
 Réunion,RE,Saint-Denis,-20.8823,55.4504
 Saint Barthélemy,BL,Gustavia,17.8958,-62.8508
