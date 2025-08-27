@@ -32,3 +32,12 @@ do ##class(%DeepSee.Utils).%BuildCube("CubeName")
 do $System.OBJ.Export("dc*.GBL","/irisdev/app/src/gbl/globals.xml",,.errors)
 zw errors
 ```
+
+
+potato2025
+
+
+
+to generate password hash do:
+
+docker run --rm -it containers.intersystems.com/intersystems/passwordhash:1.1 -algorithm SHA512 -workfactor 10000

@@ -5,10 +5,11 @@ FROM $IMAGE
 WORKDIR /home/irisowner/dev
 
 ARG TESTS=0
-ARG MODULE="iris-analytics-sample"
+ARG MODULE="csv-potato-analytics"
 ARG NAMESPACE="USER"
 
 RUN --mount=type=bind,src=.,dst=. \
+    cp /home/irisowner/dev/merge.cpf /usr/irissys/merge.cpf && \
     iris start IRIS && \
 	iris session IRIS < iris.script && \
     ([ $TESTS -eq 0 ] || iris session iris -U $NAMESPACE "##class(%ZPM.PackageManager).Shell(\"test $MODULE -v -only\",1,1)") && \

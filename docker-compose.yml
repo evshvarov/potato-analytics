@@ -1,11 +1,11 @@
-version: '3.6'
 services:
   iris:
     build:
       context: .
       dockerfile: Dockerfile
     restart: always
-    command: --check-caps false
+    environment:
+      - ISC_CPF_MERGE_FILE=/home/irisowner/dev/merge.cpf
     ports:
       - 1972
       - 32794:52773
